@@ -30,6 +30,10 @@ public class Cat {
 		g2.setColor(Color.lightGray);
 		g2.fillRect(0, 0, 1000, 1000);
 		
+		//add a sun
+		g2.setColor(Color.yellow);
+		g2.fillOval(catX+200, catY, 50, 50);
+		
 		// Draw the head
 		g2.setColor(Color.orange);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
@@ -51,7 +55,7 @@ public class Cat {
 		g2.fillRect(catX + HEAD_DIMENSION/3 + 8, catY + HEAD_DIMENSION-5, 20, 10);
 		
 		// Meow text appears below cat head, +20 places below 
-		g2.setColor(Color.black);
+		g2.setColor(Color.white);
 		// so it doesn't overlap the drawing
 		g2.drawString("Meow!", catX, catY+HEAD_DIMENSION+20);	
 	}
