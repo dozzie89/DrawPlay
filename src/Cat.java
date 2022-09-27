@@ -26,11 +26,15 @@ public class Cat {
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
 		int y=catY;
+		//Draw the background
+		g2.setColor(Color.lightGray);
+		g2.fillRect(0, 0, 1000, 1000);
+		
 		// Draw the head
 		g2.setColor(Color.orange);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
-		g2.setColor(Color.green);
+		g2.setColor(Color.magenta);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
@@ -44,7 +48,7 @@ public class Cat {
 		
 		//Add a collar
 		g2.setColor(Color.red);
-		g2.fillRect(catX + HEAD_DIMENSION/3, catY + HEAD_DIMENSION-5, 20, 10);
+		g2.fillRect(catX + HEAD_DIMENSION/3 + 8, catY + HEAD_DIMENSION-5, 20, 10);
 		
 		// Meow text appears below cat head, +20 places below 
 		g2.setColor(Color.black);
