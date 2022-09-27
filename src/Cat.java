@@ -54,9 +54,13 @@ public class Cat {
 		g2.setColor(Color.red);
 		g2.fillRect(catX + HEAD_DIMENSION/3 + 8, catY + HEAD_DIMENSION-5, 20, 10);
 		
+		//Add a text box
+		g2.setColor(Color.black);
+		g2.fillRect(catX - 5, catY + HEAD_DIMENSION + 13, 50, 15);
+		
 		// Meow text appears below cat head, +20 places below 
 		g2.setColor(Color.white);
 		// so it doesn't overlap the drawing
-		g2.drawString("Meow!", catX, catY+HEAD_DIMENSION+20);	
+		g2.drawString("Meow!", catX, catY+HEAD_DIMENSION+25);	
 	}
 }
